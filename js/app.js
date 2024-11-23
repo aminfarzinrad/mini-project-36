@@ -1,8 +1,7 @@
 'use strict';
 
 let SecretNumber = Math.trunc(Math.random()* 20 ) + 1;
-// console.log(SecretNumber);
-document.querySelector('.number') .textContent = SecretNumber;
+console.log(SecretNumber);
 let score = 20;
 document.querySelector('.check') .addEventListener('click',
     function(){
@@ -16,6 +15,7 @@ document.querySelector('.check') .addEventListener('click',
 
         // when player wins
         } else if (clickValue === SecretNumber){
+            document.querySelector('.number') .textContent = SecretNumber;
             document.querySelector('.message') .textContent = 'Correct Number!'
             document.querySelector('body') .style.backgroundColor = "#60b347"
             document.querySelector('.number') .style.width = '30rem';
