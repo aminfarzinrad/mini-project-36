@@ -37,6 +37,8 @@ document.querySelector('.check') .addEventListener('click',
             } else {
                 document.querySelector('.score') .textContent = 0;
                 displayMasseage('You lose the game!');
+                document.querySelector('body') .style.backgroundColor = 'red';
+                document.querySelector('.number') .textContent = '❌';
             }
         } 
         // when guess is too high    
